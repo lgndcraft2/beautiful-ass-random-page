@@ -4,71 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="techstars.png" />
     <title>Home Page</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Brand</a>
-            
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="cta-button">Get Started</a>
-                </li>
-            </ul>
-            
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+<nav class="navbar">
+    <div class="nav-container">
+            <a href="#" class="logo"><img src="techstars.png" alt="" class="nav-image">echstars</a>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="cta-button">Learn more</a>
+            </li>
+        </ul>
+        
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-subtitle">Techstars Present:</div>
+        <h1 class="hero-title">Techstars Hackathon</h1>
+        <p class="hero-description">
+            This is a 3-day online event where students team up to build innovative projects, learn new skills, and have fun!
+        </p>
+        <div class="hero-buttons">
+            <a href="#" class="btn-primary">Register Now</a>
+            <a href="#" class="btn-secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- SOME SEXY-TEXTY CARD SHII -->
+<section class="text-sections">
+    <div class="section-container">
+        <div class="main-section">
+            <h2>Details</h2>
+        </div>
+        <div class="section-grid">
+            <div class="text-card">
+                <div class="card-icon">📅</div>
+                <h3 class="card-title">Date</h3>
+                <p class="card-description">
+                    18th - 20th of July, 2025
+                </p>
+            </div>
+
+            <div class="text-card">
+                <div class="card-icon">📍</div>
+                <h3 class="card-title">Location</h3>
+                <p class="card-description">
+                    100% Remote (but all on campus)
+                </p>
+            </div>
+
+            <div class="text-card">
+                <div class="card-icon">🎯</div>
+                <h3 class="card-title">Eligible Participants</h3>
+                <p class="card-description">
+                    UNILAG Freshers 
+                </p>
             </div>
         </div>
-    </nav>
+        <div class="main-section">
+            <h2>Hackathon Specifics</h2>
+        </div>
+        <div class="section-grid">
+            <div class="text-card">
+                <div class="card-icon">🔒</div>
+                <h3 class="card-title">Secure & Reliable</h3>
+                <p class="card-description">
+                    Security is at the core of everything we build. Our robust, reliable solutions ensure 
+                    your data remains protected while delivering consistent performance you can trust.
+                </p>
+            </div>
 
-    <div class="content">
-        <h1>Beautiful Navigation</h1>
-        <p>This is a responsive navigation bar with Google Fonts (Inter & Poppins), smooth animations, and a clean white background. Try resizing your browser to see the mobile hamburger menu in action!</p>
+            <div class="text-card">
+                <div class="card-icon">📱</div>
+                <h3 class="card-title">Mobile-First Design</h3>
+                <p class="card-description">
+                    In today's mobile world, we prioritize responsive design that looks and performs 
+                    beautifully across all devices, ensuring your audience stays engaged everywhere.
+                </p>
+            </div>
+
+            <div class="text-card">
+                <div class="card-icon">⭐</div>
+                <h3 class="card-title">24/7 Support</h3>
+                <p class="card-description">
+                    Our dedicated support team is available around the clock to ensure your success. 
+                    We're committed to providing exceptional service whenever you need assistance.
+                </p>
+            </div>
+        </div>
+        <div class="main-section">
+            <h2>Why Choose Us</h2>
+            <p>We combine cutting-edge technology with creative excellence to deliver solutions that exceed expectations and drive meaningful results.</p>
+        </div>
     </div>
+</section>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
 
-        // Close mobile menu when clicking on a nav link
-        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }));
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
 
-        // Add scroll effect to navbar
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
-            } else {
-                navbar.style.boxShadow = '0 2px 12px rgba(0, 0, 0, 0.08)';
-            }
-        });
-    </script>
+    // Close mobile menu when clicking on a nav link
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }));
+
+    // Add scroll effect to navbar
+    window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
+        } else {
+            navbar.style.boxShadow = '0 2px 12px rgba(0, 0, 0, 0.08)';
+        }
+    });
+</script>
 </body>
 </html>
